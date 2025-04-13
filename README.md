@@ -17,6 +17,8 @@ The project is built using R, organized with modular scripts, and managed via Gi
 - `scripts/`  
   Modular R scripts used in each part of the pipeline.  
   └── `01_clean_data.R` — Performs all data import, merging, filtering, and variable creation.
+  └── `02_table1_switching_patterns.R` — Generates switching pattern tables (Table 1 and 1b) by facility type.
+  └── `03_figure1_sankey_data.R` — Prepares input and draws Figure 1: a four-level Sankey diagram of Medicare switching flows.
 
 - `main.R`  
   Master script that sequentially runs all scripts in the correct order.
@@ -32,9 +34,9 @@ All data files in the data/ folder are synthetic, preserving the structure and v
 
 - **ruby_adm_coho21.sas7bdat**: Contains all 2021 Medicare Beneficiary Summary File (MBSF) variables for beneficiaries admitted to AL in 2021.
 
-- **all_hmo_mbsf21.sas7bdat**: Extends the 2021 MBSF data with select HMO variables from 2020 and 2022, and includes dementia indicators for both MA and FFS beneficiaries.
+- **all_hmo_mbsf21.dta**: A 1/3 random sample of the full synthetic 2021 MBSF data, extended with select HMO variables from 2020 and 2022. Includes dementia indicators for both MA and FFS beneficiaries.
 
-- **allmbsf20vars_coh21.sas7bdat**: Contains 2020 MBSF variables for the 2021 AL admission cohort.
+- **allmbsf20vars_coh21.dta**: A 1/3 random sample of the 2020 MBSF variables for the 2021 assisted living admission cohort. Filtered to match the sampled beneficiaries in `all_hmo_mbsf21.dta`.
 
 - **new_al21.sas7bdat**: State-level AL memory care licensing data for 34 states, including indicators of whether each facility provides dementia care.
 
@@ -62,3 +64,5 @@ All data files in the data/ folder are synthetic, preserving the structure and v
 11. Construct Medicare switching categories, including MA-to-FFS, FFS-to-MA, within-MA switching, and non-switchers, based on changes in enrollment and MA plan codes (hkcptype01, hkcptype01_22).
 
 12. Save the final cleaned analytic file as cleaned_2021.csv in the temp/ folder. This file will serve as input for the modeling and visualization steps.
+
+## Output Description

@@ -1,0 +1,21 @@
+source,target,value,facility,enrollment,n,final_status
+Total Beneficiaries,General AL,13013,NA,NA,NA,NA
+Total Beneficiaries,Memory Care-Licensed AL,9355,NA,NA,NA,NA
+General AL,General AL FFS,7745,General AL,General AL FFS,7745,NA
+General AL,General AL MA,5268,General AL,General AL MA,5268,NA
+Memory Care-Licensed AL,Memory Care-Licensed AL FFS,5518,Memory Care-Licensed AL,Memory Care-Licensed AL FFS,5518,NA
+Memory Care-Licensed AL,Memory Care-Licensed AL MA,3837,Memory Care-Licensed AL,Memory Care-Licensed AL MA,3837,NA
+General AL FFS,Died,728,NA,General AL FFS,728,Died
+General AL FFS,FFS to MA,645,NA,General AL FFS,645,FFS to MA
+General AL FFS,Stay in FFS,6372,NA,General AL FFS,6372,Stay in FFS
+General AL MA,Died,516,NA,General AL MA,516,Died
+General AL MA,MA to FFS,272,NA,General AL MA,272,MA to FFS
+General AL MA,Stay in MA,3840,NA,General AL MA,3840,Stay in MA
+General AL MA,Switching within MA,640,NA,General AL MA,640,Switching within MA
+Memory Care-Licensed AL FFS,Died,602,NA,Memory Care-Licensed AL FFS,602,Died
+Memory Care-Licensed AL FFS,FFS to MA,319,NA,Memory Care-Licensed AL FFS,319,FFS to MA
+Memory Care-Licensed AL FFS,Stay in FFS,4597,NA,Memory Care-Licensed AL FFS,4597,Stay in FFS
+Memory Care-Licensed AL MA,Died,416,NA,Memory Care-Licensed AL MA,416,Died
+Memory Care-Licensed AL MA,MA to FFS,152,NA,Memory Care-Licensed AL MA,152,MA to FFS
+Memory Care-Licensed AL MA,Stay in MA,2883,NA,Memory Care-Licensed AL MA,2883,Stay in MA
+Memory Care-Licensed AL MA,Switching within MA,386,NA,Memory Care-Licensed AL MA,386,Switching within MA
