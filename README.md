@@ -25,8 +25,10 @@ The project is built using R, organized with modular scripts, and managed via Gi
   └── `04_table2_dual_switching.R` - Generates Table 2 and Table 2b: switching patterns stratified by dual eligibility (both full cohort and switchers only).
 
   └── `05_table3_adrd_switching.R` — Generates Table 3: chi-square tests and summary statistics examining the relationship between ADRD status, facility type, and Medicare switching behavior. 
-   
+
   └──  `06_table4_switching_by_adrd.R` — Generates Table 4: switching type distributions by ADRD status and 2022 enrollment outcome.
+
+  └──  `07_table7_multinomial_regression.R` — Generates Table 7: multinomial logistic regression model of switching outcomes, using demographics, chronic conditions, and assisted living characteristics.
 
 - `main.R`  
   Master script that sequentially runs all scripts in the correct order.
@@ -98,3 +100,6 @@ All data files in the data/ folder are synthetic, preserving the structure and v
 ### Table 4 – Switching Outcomes by ADRD Status
 - `table4_adrd_switching.csv`: Distribution of switching types among beneficiaries with ADRD.
 - `table4_nonadrd_switching.csv`: Distribution of switching types among beneficiaries without ADRD.
+
+### Table 7 – Multinomial Regression on Switching Behavior
+- `table7_mlogit_results.csv`: Multinomial regression output reporting exponentiated coefficients (relative risk ratios) and confidence intervals. The base outcome is "Stayed in MA or FFS," and comparisons are made against switching behaviors (MA_to_FFS, FFS_to_MA, MA_switch).

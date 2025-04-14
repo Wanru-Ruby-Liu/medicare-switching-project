@@ -9,6 +9,9 @@ library(stringr)
 library(readr)
 library(scales)
 library(networkD3)
+library(nnet)
+library(broom)
+library(janitor)
 
 # ---- Step 1: Data Cleaning ----
 source("scripts/01_clean_data.R")
@@ -27,3 +30,6 @@ source("scripts/05_table3_adrd_switching.R")
 
 # ---- Step 6: Table 4 – Switching Patterns by ADRD Status ----
 source("scripts/06_table4_switching_by_adrd.R")
+
+# ---- Step 7: Table 7 – Multinomial Regression on Switching Outcomes ----
+source("scripts/07_table7_multinomial_regression.R")
