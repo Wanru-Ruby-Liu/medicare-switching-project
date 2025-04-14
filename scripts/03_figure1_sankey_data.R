@@ -1,6 +1,7 @@
 library(dplyr)
 library(readr)
 library(scales)
+options(readr.show_col_types = FALSE)
 
 df <- read_csv("temp/cleaned_2021.csv")
 

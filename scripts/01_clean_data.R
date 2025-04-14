@@ -4,6 +4,8 @@ library(lubridate)
 library(stringr)
 library(readr)
 
+options(readr.show_col_types = FALSE)
+
 # Define file paths
 data_dir <- "data/"
 temp_dir <- "temp/"

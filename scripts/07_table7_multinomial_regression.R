@@ -3,6 +3,7 @@ library(readr)
 library(nnet)
 library(broom)
 library(janitor)
+options(readr.show_col_types = FALSE)
 
 # Load data
 df <- read_csv("temp/cleaned_2021.csv")

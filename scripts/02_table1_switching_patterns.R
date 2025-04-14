@@ -2,6 +2,7 @@
 
 library(dplyr)
 library(readr)
+options(readr.show_col_types = FALSE)
 
 # Load cleaned dataset
 df <- read_csv("temp/cleaned_2021.csv")
