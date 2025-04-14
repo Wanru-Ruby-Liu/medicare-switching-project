@@ -18,3 +18,12 @@ source("scripts/02_table1_switching_patterns.R")
 
 # ---- Step 3: Figure 1 – Sankey Diagram of Medicare Switching Paths ----
 source("scripts/03_figure1_sankey.R")
+
+# ---- Step 4: Table 2 – Switching by Dual Eligibility ----
+source("scripts/04_table2_dual_switching.R")
+
+# ---- Step 5: Table 3 – ADRD Status and Switching Associations ----
+source("scripts/05_table3_adrd_switching.R")
+
+# ---- Step 6: Table 4 – Switching Patterns by ADRD Status ----
+source("scripts/06_table4_switching_by_adrd.R")

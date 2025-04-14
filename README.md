@@ -17,8 +17,16 @@ The project is built using R, organized with modular scripts, and managed via Gi
 - `scripts/`  
   Modular R scripts used in each part of the pipeline.  
   └── `01_clean_data.R` — Performs all data import, merging, filtering, and variable creation.
+
   └── `02_table1_switching_patterns.R` — Generates switching pattern tables (Table 1 and 1b) by facility type.
+
   └── `03_figure1_sankey_data.R` — Prepares input and draws Figure 1: a four-level Sankey diagram of Medicare switching flows.
+
+  └── `04_table2_dual_switching.R` - Generates Table 2 and Table 2b: switching patterns stratified by dual eligibility (both full cohort and switchers only).
+
+  └── `05_table3_adrd_switching.R` — Generates Table 3: chi-square tests and summary statistics examining the relationship between ADRD status, facility type, and Medicare switching behavior. 
+   
+  └──  `06_table4_switching_by_adrd.R` — Generates Table 4: switching type distributions by ADRD status and 2022 enrollment outcome.
 
 - `main.R`  
   Master script that sequentially runs all scripts in the correct order.
@@ -66,3 +74,27 @@ All data files in the data/ folder are synthetic, preserving the structure and v
 12. Save the final cleaned analytic file as cleaned_2021.csv in the temp/ folder. This file will serve as input for the modeling and visualization steps.
 
 ## Output Description
+### Table 1 & Table 1b – Switching Patterns by Facility Type
+- `table1_nondementia_switching.csv`: Summary of switching outcomes for general assisted living (non-memory-care licensed) residents.
+- `table1_dementia_switching.csv`: Summary of switching outcomes for memory care-licensed assisted living residents.
+- `table1b_switcher_general_switching.csv`: Switching-only subgroup from general ALs.
+- `table1b_switcher_mc_switching.csv`: Switching-only subgroup from memory care-licensed ALs.
+
+### Figure 1 – Sankey Diagram of Medicare Switching Flows
+- `figure1_sankey_links.csv`: Edge data for the four-level Sankey diagram.
+- `figure1_sankey_nodes.csv`: Node label definitions (with counts and percentages).
+- `figure1_sankey.html`: Interactive Sankey visualization showing transitions from total beneficiaries to AL type, Medicare plan type, and switching outcome.
+
+### Table 2 & Table 2b – Switching by Dual Eligibility
+- `table2_dual_switching.csv`: Switching patterns for dually eligible beneficiaries.
+- `table2_nondual_switching.csv`: Switching patterns for non-dually eligible beneficiaries.
+- `table2b_switcher_dual_switching.csv`: Dual switchers only.
+- `table2b_switcher_nondual_switching.csv`: Non-dual switchers only.
+
+### Table 3 – ADRD Status and Facility/Plan Associations
+- `table3_adrd_dementia_AL.csv`: Summary table showing distribution of beneficiaries by ADRD status and memory care licensing.
+- (Chi-square results are printed to the R console when the script is run.)
+
+### Table 4 – Switching Outcomes by ADRD Status
+- `table4_adrd_switching.csv`: Distribution of switching types among beneficiaries with ADRD.
+- `table4_nonadrd_switching.csv`: Distribution of switching types among beneficiaries without ADRD.

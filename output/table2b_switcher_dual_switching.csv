@@ -1,0 +1,4 @@
+status_2021,switch_type,count,row_total,row_pct
+FFS,FFS_to_MA,465,465,100
+MA,MA_switch,369,591,62.43654822335025
+MA,MA_to_FFS,222,591,37.56345177664975
