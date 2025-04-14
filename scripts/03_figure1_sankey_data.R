@@ -125,5 +125,6 @@ sankey <- sankeyNetwork(
   sinksRight = FALSE
 )
 
-htmlwidgets::saveWidget(sankey, "output/figure1_sankey.html")
+htmlwidgets::saveWidget(sankey, "output/figure1_sankey.html", selfcontained = FALSE)
+
 sankey

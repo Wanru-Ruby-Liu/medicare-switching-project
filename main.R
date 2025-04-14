@@ -20,7 +20,7 @@ source("scripts/01_clean_data.R")
 source("scripts/02_table1_switching_patterns.R")
 
 # ---- Step 3: Figure 1 – Sankey Diagram of Medicare Switching Paths ----
-source("scripts/03_figure1_sankey.R")
+source("scripts/03_figure1_sankey_data.R")
 
 # ---- Step 4: Table 2 – Switching by Dual Eligibility ----
 source("scripts/04_table2_dual_switching.R")
