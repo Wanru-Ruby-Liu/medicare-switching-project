@@ -13,23 +13,23 @@ library(nnet)
 library(broom)
 library(janitor)
 
-# ---- Step 1: Data Cleaning ----
+# ---- Data Cleaning ----
 source("scripts/01_clean_data.R")
 
-# ---- Step 2: Table 1: Switching Patterns by Dementia Licensing ----
+# ---- Table 1: Switching Patterns by Dementia Licensing ----
 source("scripts/02_table1_switching_patterns.R")
 
-# ---- Step 3: Figure 1 – Sankey Diagram of Medicare Switching Paths ----
+# ---- Figure 1 – Sankey Diagram of Medicare Switching Paths ----
 source("scripts/03_figure1_sankey_data.R")
 
-# ---- Step 4: Table 2 – Switching by Dual Eligibility ----
+# ---- Table 2 – Switching by Dual Eligibility ----
 source("scripts/04_table2_dual_switching.R")
 
-# ---- Step 5: Table 3 – ADRD Status and Switching Associations ----
+# ---- Table 3 – ADRD Status and Switching Associations ----
 source("scripts/05_table3_adrd_switching.R")
 
 # ---- Step 6: Table 4 – Switching Patterns by ADRD Status ----
 source("scripts/06_table4_switching_by_adrd.R")
 
-# ---- Step 7: Table 7 – Multinomial Regression on Switching Outcomes ----
+# ---- Table 7 – Multinomial Regression on Switching Outcomes ----
 source("scripts/07_table7_multinomial_regression.R")
