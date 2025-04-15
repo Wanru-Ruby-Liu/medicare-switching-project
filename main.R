@@ -32,4 +32,4 @@ source("scripts/05_table3_adrd_switching.R")
 source("scripts/06_table4_switching_by_adrd.R")
 
 # ---- Table 7 – Multinomial Regression on Switching Outcomes ----
-source("scripts/07_table7_multinomial_regression.R")
+source("scripts/07_table5_multinomial_regression.R")
