@@ -53,4 +53,4 @@ tidy_mlogit <- tidy(model, conf.int = TRUE, exponentiate = TRUE) %>%
   clean_names()
 
 # Step 5: Save results to CSV
-write_csv(tidy_mlogit, "output/table7_mlogit_results.csv")
+write_csv(tidy_mlogit, "output/table5_mlogit_results.csv")
